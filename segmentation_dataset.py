@@ -116,7 +116,7 @@ _PQR_SEG_INFORMATION = DatasetDescriptor(
         'val': 231,
     },
     num_classes=894,  # number of classes in your dataset
-    ignore_label=894,  # white edges that will be ignored to be class
+    ignore_label=0,  # white edges that will be ignored to be class
 )
 
 _DATASETS_INFORMATION = {
