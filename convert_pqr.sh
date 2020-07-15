@@ -8,7 +8,13 @@ mkdir -p "${OUTPUT_DIR}"
 IMAGE_FOLDER="${PQR_ROOT}/JPEGImages"
 LIST_FOLDER="${PQR_ROOT}/ImageSets"
 echo "Converting PQR dataset..."
-python ./build_new_pqr_data.py \
+# python ./build_new_pqr_data.py \
+#   --image_folder="${IMAGE_FOLDER}" \
+#   --semantic_segmentation_folder="${SEG_FOLDER}" \
+#   --list_folder="${LIST_FOLDER}" \
+#   --image_format="jpg" \
+#   --output_dir="${OUTPUT_DIR}"
+python ./build_voc2012_data.py \
   --image_folder="${IMAGE_FOLDER}" \
   --semantic_segmentation_folder="${SEG_FOLDER}" \
   --list_folder="${LIST_FOLDER}" \
